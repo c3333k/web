@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>블록체인(Blockchain) - 개념과 원리</title>
+</head>
+<body>
+  <h1><a href="index.html">블록체인(Blockchain)</a></h1>
+  <ol>
+    <li><a href="1.html">개념과 원리</a></li>
+    <li><a href="2.html">활용사례</a></li>
+    <li><a href="3.html">퍼블릭 블록체인과 프라이빗 블록체인</a></li>
+    <li><a href="4.html">관련용어</a></li>
+    <li><a href="5.html">관련인물</a></li>
+    <li><a href="6.html">관련소식</a></li>
+  </ol>
+  <p style="margin-top:70px;">
+  <h3><a href="https://ko.wikipedia.org/wiki/블록체인" target="_blank" title="위키백과 - 블록체인">블록체인이란?</a></h3>
+  <!--href : hypertext(링크) + reference(참조)-->
+  <p>블록에 데이터를 담아 체인 형태로 연결, 수많은 컴퓨터에 동시에 이를 복제해 저장하는 <strong>분산형 데이터 저장 기술</strong>이다. <strong>공공 거래 장부</strong>라고도 부른다. 중앙 집중형 서버에 거래 기록을 보관하지 않고 거래에 모든 사용자에게 거래 내역을 보내 주며, <u>거래 때마다 모든 거래 참여자들이 정보를 공유하고 이를 대조해 데이터 위조나 변조를 할 수 없도록 돼 있다.</u></p>
+  <p style="margin-top:70px;">
+  <h3>· <u>블록(Block)</u></h3>
+  <p><strong>블록은 데이터를 저장하는 단위</strong>로, <strong>바디(body)와 헤더(header)로 구분</strong>된다. 바디에는 거래 내용이, 헤더에는 머클해시(머클루트)나 넌스(nounce, 암호화와 관련되는 임의의 수) 등의 암호코드가 담겨 있다. 블록은 약 10분을 주기로 생성되며, 거래 기록을 끌어 모아 블록을 만들어 신뢰성을 검증하면서 이전 블록에 연결하여 블록체인 형태가 된다. 여기서 처음 시작된 블록을 <strong>제네시스 블록</strong>이라고 부른다. 즉, 제네시스 블록은 그 앞에 어떤 블록도 생성되지 않은 최초의 블록을 말한다.</p>
+  <p style="margin-top:40px;">
+  <h3>· <u>노드(Node)</u></h3>
+  <p>블록체인은 중앙 집중형 서버에 거래 기록을 보관, 관리하지 않고 거래에 참여하는 <strong>개개인의 서버들이 모여 네트워크를 유지 및 관리</strong>한다. <strong>이 개개인의 서버, 즉 참여자를 노드</strong>라고 한다. 중앙 관리자가 없기 때문에 블록을 배포하는 노드의 역할이 중요하며, <u>참여하는 노드들 가운데 절반 이상의 동의가 있어야 새 블록이 생성된다.</u> 노드들은 블록체인을 컴퓨터에 저장해 놓고 있는데, 일부 노드가 해킹을 당해 기존 내용이 틀어져도 다수의 노드에게 데이터가 남아 있어 계속적으로 데이터를 보존할 수 있다.</p>
+  <p style="margin-top:40px;">
+  <h3>· <u>해시함수(Hash function)</u></h3>
+  <img src="hash.png" width="300"><br>
+  <p>해시함수는 어떤 데이터를 입력해도 같은 길이의 결과를 도출하는 함수를 말한다.(그림 출처: 위키피디아)</p>
+  <p>어떤 데이터를 입력해도 같은 길이의 결과를 도출하는 함수이다. 도출되는 결과가 중복될 가능성이 낮고, 결과 값으로 입력 값을 역으로 추정하기 어렵다. 이 때문에 해시 값을 비교하면 데이터의 변경이 발생했는지 파악할 수 있다. 해시함수는 SHA(Secure Hash Algorithm)-1이 처음 고안된 후 더 발전된 형태의 SHA-2(SHA 256)가 나왔는데, 이것을 블록체인에서 사용하고 있다. SHA-2는 어떤 길이의 값을 입력해도 결과가 256비트로 도출된다.</p>
+</body>
+</html>
+
+<!--
+Tag : 태그
+Attribute : 속성
+ul : Unordered List
+ol : Ordered List
+li : List
+* ul - li 또는 ol - li 는 짝꿍
+* ctrl(command) + 클릭 : 여러개의 커서 위치에 코드 동시 작성
+* 검색 : html h1 tag, html new line tag, html paragraph tag, html specification(사용설명서)
+-->
